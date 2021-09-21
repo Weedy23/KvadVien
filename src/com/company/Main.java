@@ -42,8 +42,7 @@ public class Main {
                 } else if (vien.charAt(i) == 'x') {
                     if (vien.charAt(i + 1) == 'x' || vien.charAt(i + 1) == '^') {
                         if (skaitlis != "") {
-                            System.out.println(skaitlis);
-                            if (skaitlis == "-") {
+                            if (skaitlis.charAt(0) == '-' && skaitlis.length() == 1) {
                                 abc[0] = -1;
                             } else {
                                 abc[0] = Integer.parseInt(skaitlis);
